@@ -10,7 +10,7 @@
   <li>Make an issue branch <code>git checkout -b IssueNumber</code> e.g <code>git checkout -b issue#10</code></li>
   <li>Do the thing that you need to do</li>
   <li>When you are done with the problem, Add your changes <code>git add -A</code></li>
-  <li>Commit your problem <code>git commit -m Did all I need to do</code> (start with a verb and describe what you did)</li>
+  <li>Commit your problem <code>git commit -m "Did all I need to do"</code> (start with a verb and describe what you did)</li>
   <li>Go to daily branch <code>git checkout MonthDate</code></li>
   <li>Merge the branch <code>git merge IssueNumber</code></li>
   <li>Close the issue that you did in issue page on github</li>
