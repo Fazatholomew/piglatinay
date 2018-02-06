@@ -1,4 +1,4 @@
-<b>Daily Work Flow:</b>
+<h1><b>Daily Work Flow:</b></h1>
 
 <ol>
   <li> List of problem(s) you want to do today</li>
