@@ -1,8 +1,3 @@
-inputData = input("owHay Arenay Atemay?")
-
-splittedData = inputData.split(" ")
-
-result = []
 
 def clusterfinder(word):
     """Takes an a word from a sentence as input, returns the position of first vowel"""
@@ -12,6 +7,7 @@ def clusterfinder(word):
         for j in range(len(vowel)):
             if _word[i] == vowel[j]:
                 return i
+    return 0
 
 def translator (inputList):
     """takes input, returns pig latinized version"""
@@ -26,4 +22,12 @@ def translator (inputList):
             newestword = ''.join(newerword)# makes string from wordlist
             result.append(newestword)# adds the 'newestword' string to result
     print(' '.join(result))# turn result from list to string and print
-translator(splittedData)
+
+while True:
+    result = []
+    inputData = input("owHay Arenay Atemay?")
+    splittedData = inputData.split(" ")
+    try:
+        translator(splittedData)
+    except:
+        print ("Try another word or sentence please!")
