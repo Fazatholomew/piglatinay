@@ -9,17 +9,24 @@ February 22, 2018
 Marlboro College
 */
 
-import translator from "translator.js"
+import translator from "./translator.js"
+const _translator = new translator()
 
 class piglatin {
   constructor(){
   }
 
   execute(sentence){
+      console.log(sentence)
     const wordslist = sentence.split(" ");
-    for (let i = 0; i < wordslist.lenght; i++){
-      translator.execute(wordslist[i]);
+      console.log(wordslist)
+    let result = [];
+    for (let i = 0; i < wordslist.length; i++){
+      result.push(_translator.execute(wordslist[i]));
+      console.log("word[" + i + "]: " + result[i])
     }
+      console.log("result: " + result)
+      return result.join(" ")
   }
 
 }
