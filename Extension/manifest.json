@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "Piglatinify",
+    "version": "1.0",
+
+    "description": "Translate any webpage text into piglatin language. LOL!",
+    "homepage_url": "https://github.com/fazatholomew/piglatinay",
+    "icons": {
+      "48": ""
+    },
+
+    "permissions": [
+      "activeTab"
+    ],
+    
+    "content_scripts": [
+    {
+      "matches": ["https://cs.marlboro.college/*"],
+      "js": ["main.js"]
+    }
+  ]
+  }
